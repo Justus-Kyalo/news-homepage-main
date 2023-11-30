@@ -13,7 +13,6 @@ body {
 body {
   font-family: "Inter", sans-serif;
   background-color: hsl(36, 100%, 99%);
-   
 }
 
 ul {
@@ -228,15 +227,16 @@ article h3 {
     display: none;
   }
   .nav-links {
-    padding: 1rem;
+    padding: 1rem 0rem;
     flex-direction: row;
+    gap: 3rem;
   }
   .nav-links a {
     color: hsl(236, 13%, 42%);
     font-size: 1rem;
   }
   .cover-page {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.4fr 1fr;
   }
   .mobile-image {
     display: none;
@@ -247,7 +247,7 @@ article h3 {
 
   .blog-content {
     grid-template-columns: 0.8fr 1fr;
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
   }
   .blog-content > div {
