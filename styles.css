@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(36, 100%, 99%);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  isolation: isolate;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar {
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+.logo {
+  max-width: 45px;
+}
+.menu-icon {
+  max-width: 35px;
+  cursor: pointer;
+}
+.navigation {
+  position: fixed;
+  width: 100%;
+  max-width: 60vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+.navigation.open {
+  transform: translateX(0);
+}
+.navigation > div {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+.nav-links a {
+  color: hsl(240, 100%, 5%);
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: 0.25s;
+}
+.nav-links a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navigation {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    width: unset;
+    max-width: unset;
+    transform: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .nav-links {
+    padding: 1rem;
+    flex-direction: row;
+  }
+  .nav-links a {
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+  }
+}
