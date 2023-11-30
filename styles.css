@@ -13,7 +13,6 @@ body {
 body {
   font-family: "Inter", sans-serif;
   background-color: hsl(36, 100%, 99%);
-  
 }
 
 ul {
@@ -62,7 +61,7 @@ main {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   transform: translateX(100%);
   transition: 0.5s;
